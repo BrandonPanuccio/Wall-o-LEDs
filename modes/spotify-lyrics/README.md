@@ -32,13 +32,19 @@ SPOTIFY_REDIRECT_URI=http://127.0.0.1:8080/callback
 SPOTIFY_REFRESH_TOKEN=   # fill this in after step 3
 
 
-/# Lyrics provider
+# Lyrics provider
 PRIMARY_LYRICS_PROVIDER=lrclib
 
-/# delay (positive) or advance (negative) lyrics globally
+# delay (positive) or advance (negative) lyrics globally
 LYRICS_TIME_OFFSET_MS=120
-/# how often to poll Spotify (higher = tighter sync, more API calls)
-SPOTIFY_POLL_HZ=3.0
+# how often to poll Spotify (higher = tighter sync, more API calls)
+SPOTIFY_POLL_HZ=4.0
+
+# Rendering
+KARAOKE_MODE=typewriter   # typewriter | off
+KARAOKE_CPS=100            # characters per second for typewriter
+THEME=magenta               # plain | green | yellow | cyan | magenta | rainbow
+
 ```
 
 ## 3. Get a refresh token (one-time)
